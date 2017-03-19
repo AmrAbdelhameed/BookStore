@@ -1,6 +1,8 @@
 package com.example.amr.bookstore;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -104,7 +106,15 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
                                 Toast.makeText(mContext, holder.title.getText().toString(), Toast.LENGTH_SHORT).show();
                                 return true;
                             case R.id.action_play_next:
-                                Toast.makeText(mContext, holder.count.getText().toString(), Toast.LENGTH_SHORT).show();
+
+                                // Toast.makeText(mContext, holder.count.getText().toString(), Toast.LENGTH_SHORT).show();
+
+                                Intent emailIntent = new Intent(Intent.ACTION_SENDTO
+                                        , Uri.fromParts("mailto", "amrabdelhameedfcis@gmail.com", null));
+                                emailIntent.putExtra(Intent.EXTRA_SUBJECT, holder.title.getText().toString());
+                                emailIntent.putExtra(Intent.EXTRA_TEXT, holder.count.getText().toString());
+                                mContext.startActivity(Intent.createChooser(emailIntent, "Send email..."));
+
                                 return true;
                             default:
                         }
@@ -126,15 +136,6 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
 
         @Override
         public boolean onMenuItemClick(MenuItem menuItem) {
-            switch (menuItem.getItemId()) {
-                case R.id.action_add_favourite:
-                    Toast.makeText(mContext, "Add to favourite", Toast.LENGTH_SHORT).show();
-                    return true;
-                case R.id.action_play_next:
-                    Toast.makeText(mContext, "Play next", Toast.LENGTH_SHORT).show();
-                    return true;
-                default:
-            }
             return false;
         }
     }
