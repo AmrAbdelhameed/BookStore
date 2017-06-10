@@ -91,34 +91,34 @@ public class MainActivity extends AppCompatActivity {
 
         Album a;
 
-        a = new Album("Sugar Ray", 8, "https://image.tmdb.org/t/p/w500/xq1Ugd62d23K2knRUx6xxuALTZB.jpg");
+        a = new Album("Sugar Ray", 8, "https://3.imimg.com/data3/KN/XK/MY-6727333/school-course-books-250x250.jpg");
         albumList.add(a);
 
-        a = new Album("Maroon5", 13, "https://image.tmdb.org/t/p/w500/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg");
+        a = new Album("Maroon5", 13, "https://3.imimg.com/data3/KN/XK/MY-6727333/school-course-books-250x250.jpg");
         albumList.add(a);
 
-        a = new Album("Bon Jovi", 11, "https://image.tmdb.org/t/p/w500/d4KNaTrltq6bpkFS01pYtyXa09m.jpg");
+        a = new Album("Bon Jovi", 11, "https://3.imimg.com/data3/KN/XK/MY-6727333/school-course-books-250x250.jpg");
         albumList.add(a);
 
-        a = new Album("The Corrs", 12, "https://image.tmdb.org/t/p/w500/ehdFkb1opRxmuxLp7xC3HHGWHO9.jpg");
+        a = new Album("The Corrs", 12, "https://3.imimg.com/data3/KN/XK/MY-6727333/school-course-books-250x250.jpg");
         albumList.add(a);
 
-        a = new Album("The Cranberries", 14, "https://image.tmdb.org/t/p/w500/48A2gbhkXJY5WIKFe4IvNUCl665.jpg");
+        a = new Album("The Cranberries", 14, "https://3.imimg.com/data3/KN/XK/MY-6727333/school-course-books-250x250.jpg");
         albumList.add(a);
 
-        a = new Album("Westlife", 1, "https://image.tmdb.org/t/p/w500/lIv1QinFqz4dlp5U4lQ6HaiskOZ.jpg");
+        a = new Album("Westlife", 31, "https://3.imimg.com/data3/KN/XK/MY-6727333/school-course-books-250x250.jpg");
         albumList.add(a);
 
-        a = new Album("Black Eyed Peas", 11, "https://image.tmdb.org/t/p/w500/99EyyBq5dXEvY37jF7EyERhQcFe.jpg");
+        a = new Album("Black Eyed Peas", 11, "https://3.imimg.com/data3/KN/XK/MY-6727333/school-course-books-250x250.jpg");
         albumList.add(a);
 
-        a = new Album("VivaLaVida", 14, "https://image.tmdb.org/t/p/w500/yRXTVpDRBA3983C3HjoY0SO4dV6.jpg");
+        a = new Album("VivaLaVida", 14, "https://3.imimg.com/data3/KN/XK/MY-6727333/school-course-books-250x250.jpg");
         albumList.add(a);
 
-        a = new Album("The Cardigans", 11, "https://image.tmdb.org/t/p/w500/jLRllZsubY8UWpeMyDLVXdRyEWi.jpg");
+        a = new Album("The Cardigans", 11, "https://3.imimg.com/data3/KN/XK/MY-6727333/school-course-books-250x250.jpg");
         albumList.add(a);
 
-        a = new Album("Pussycat Dolls", 17, "https://image.tmdb.org/t/p/w500/yPisjyLweCl1tbgwgtzBCNCBle.jpg");
+        a = new Album("Pussycat Dolls", 17, "https://3.imimg.com/data3/KN/XK/MY-6727333/school-course-books-250x250.jpg");
         albumList.add(a);
 
         adapter.notifyDataSetChanged();
